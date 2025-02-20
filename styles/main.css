@@ -1,3 +1,19 @@
 body {
-    background-color: black;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../images/background.webp');
+    }
+}
+
+@media screen and (orientation: potrait) {
+    body {
+        background-image: url('../images/background.jpg');
+    }
 }
