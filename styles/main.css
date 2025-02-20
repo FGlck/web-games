@@ -12,7 +12,7 @@ body {
     }
 }
 
-@media screen and (orientation: potrait) {
+@media screen and (orientation: portrait) {
     body {
         background-image: url('../images/background.jpg');
     }
