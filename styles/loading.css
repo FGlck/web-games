@@ -1,0 +1,17 @@
+@media screen and (orientation: landscape) {
+    .content {
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .content {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translate(-50%, 0);
+    }
+}

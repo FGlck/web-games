@@ -1,0 +1,20 @@
+{
+    "short_name": "Browser Games",
+    "name": "MDN Web Docs",
+    "icons": [
+      {
+        "src": "images/logo.webp",
+        "sizes": "1024x1024",
+        "type": "image/webp"
+      },
+      {
+        "src": "images/logo.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#000000"
+  }
