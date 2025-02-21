@@ -26,7 +26,7 @@ function processXML(xml) {
 }
 function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
     let container = document.createElement("div");
-    container.class = "game";
+    container.classList.add("game");
     let previewimage = document.createElement("img");
     previewimage.src = FOLDER + "/" + PREVIEW;
     previewimage.addEventListener("click", () => {

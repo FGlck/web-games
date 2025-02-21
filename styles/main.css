@@ -27,4 +27,12 @@ body {
         height: 10%;
         transform: translate(-50%, 0);
     }
+    .game img {
+        position: relative;
+        top: 50%;
+        left: 10%;
+        width: 10%;
+        height: 80%;
+        transform: translate(-50%,-50%);
+    }
 }
