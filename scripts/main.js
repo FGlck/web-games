@@ -11,7 +11,26 @@ function processInput(request) {
     return request.responseXML;
 }
 function processXML(xml) {
-    console.log(xml);
+    console.log("Processing XML...");
+    let games = xml.getElementsByTagName("GAME");
+    games.forEach(game => {
+        spawnContainer("HI", "jj", "J", "uehdi", "123.png");
+    });
+}
+function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
+    let container = document.createElement("div");
+    container.class = "game";
+    let previewimage = document.createElement("img");
+    previewimage.src = FOLDER + "/" + PREVIEW;
+    container.appendChild(previewimage);
+    let title = document.createElement("h1");
+    title.innerText = NAME;
+    container.appendChild(title);
+    let subtitle = document.createElement("a");
+    subtitle.href = PAGE;
+    subtitle.innerText = AUTHOR;
+    container.appendChild(subtitle);
+    document.body.appendChild(container);
 }
 
 let request = new XMLHttpRequest();

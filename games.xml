@@ -1,8 +1,9 @@
-<games>
-    <game>
-        <name>JoinJoy</name>
-        <folder>jj</folder>
-        <author>Jona</author>
-        <page>http://joyjoin.org</page>
-    </game>
-</games>
+<GAMES>
+    <GAME>
+        <NAME>JoinJoy</NAME>
+        <FOLDER>jj</FOLDER>
+        <AUTHOR>Jona</AUTHOR>
+        <PAGE>http://joyjoin.org</PAGE>
+        <PREVIEW>123.png</PREVIEW>
+    </GAME>
+</GAMES>
