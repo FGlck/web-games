@@ -15,11 +15,11 @@ function processXML(xml) {
     let games = xml.getElementsByTagName("GAME");
     for (i = 0; i < games.length; i++) {
         let game = games.item(i);
-        let name = game.getElementsByTagName("NAME")[0];
-        let folder = game.getElementsByTagName("FOLDER")[0];
-        let author = game.getElementsByTagName("AUTHOR")[0];
-        let page = game.getElementsByTagName("PAGE")[0];
-        let preview = game.getElementsByTagName("PREVIEW")[0];
+        let name = game.getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
+        let folder = game.getElementsByTagName("FOLDER")[0].childNodes[0].nodeValue;
+        let author = game.getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue;
+        let page = game.getElementsByTagName("PAGE")[0].childNodes[0].nodeValue;
+        let preview = game.getElementsByTagName("PREVIEW")[0].childNodes[0].nodeValue;
         spawnContainer(name, folder, author, page, preview);
     }
     console.log("Processed XML!")
