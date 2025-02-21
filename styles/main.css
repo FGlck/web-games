@@ -20,7 +20,7 @@ body {
 .game img {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 25%;
     height: 80%;
     transform: translate(-50%, -50%);
 }
