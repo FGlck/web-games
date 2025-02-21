@@ -7,43 +7,12 @@ body {
     background-attachment: fixed;
 }
 
-@media screen and (orientation: landscape) {
-    .game {
-        position: relative;
-        top: 5%;
-        left: 25%;
-        width: 40%;
-        height: 20%;
-        transform: translate(-50%, 0);
-    }
-}
-
-@media screen and (orientation: portrait) {
-    .game {
-        position: relative;
-        top: 5%;
-        left: 50%;
-        width: 80%;
-        background-color: blue;
-        border-radius: 10px;
-        transform: translate(-50%, 0);
-    }
-    .game img {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        width: 10%;
-    }
-    .game h1 {
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        width: 75%;
-        height: 80%;
-        text-align: center;
-    }
-    .game a {
-        color: red;
-        text-align: center;
-    }
+.game {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 20%;
+    background-color: blue;
+    border-radius: 25px;
 }
