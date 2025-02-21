@@ -27,11 +27,9 @@ function processXML(xml) {
 function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
     let container = document.createElement("div");
     container.classList.add("game");
+    container.addEventListener("click", () => { location.href = FOLDER + "/index.html"; });
     let previewimage = document.createElement("img");
     previewimage.src = FOLDER + "/" + PREVIEW;
-    previewimage.addEventListener("click", () => {
-        location.href = FOLDER + "/index.html";
-    });
     container.appendChild(previewimage);
     let title = document.createElement("h1");
     title.innerText = NAME;
