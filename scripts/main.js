@@ -13,10 +13,11 @@ function processInput(request) {
 function processXML(xml) {
     console.log("Processing XML...");
     let games = xml.getElementsByTagName("GAME");
-    games.childNodes.forEach(game => {
-        spawnContainer("HI", "jj", "J", "uehdi", "123.png");
+    for (i = 0; i < games.length; i++) {
+        let game = games.item(i);
         console.log(game);
-    });
+    }
+    console.log("Processed XML!")
 }
 function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
     let container = document.createElement("div");
