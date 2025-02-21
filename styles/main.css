@@ -33,4 +33,16 @@ body {
     margin: 0;
     transform: translate(-50%, -50%);
     color: black;
+    z-index: 100;
+}
+
+.game a {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    text-align: center;
+    margin: 0;
+    color: red;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
 }
