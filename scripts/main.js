@@ -16,6 +16,7 @@ function processXML(xml) {
 
 let request = new XMLHttpRequest();
 request.open("GET", "games.xml", true);
+request.overrideMimeType("text/xml");
 request.addEventListener("load", () => {
     let xml = processInput(request);
     if (xml != null) {
