@@ -1,7 +1,7 @@
 <games>
     <game>
         <name>JoinJoy</name>
-        <folder></folder>
+        <folder>jj</folder>
         <author>Jona</author>
         <page>http://joyjoin.org</page>
     </game>
