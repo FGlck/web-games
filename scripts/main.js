@@ -8,7 +8,9 @@ function processInput(request) {
         console.error("The Server has responsed with an Error Code ", request.status, "!");
         return;
     }
-    return request.responseXML;
+    setTimeout(() => {
+        return request.responseXML;
+    }, 100);
 }
 function processXML(xml) {
     console.log(xml);
