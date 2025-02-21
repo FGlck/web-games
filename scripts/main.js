@@ -22,13 +22,16 @@ function processXML(xml) {
         let preview = game.getElementsByTagName("PREVIEW")[0].childNodes[0].nodeValue;
         spawnContainer(name, folder, author, page, preview);
     }
-    console.log("Processed XML!")
+    console.log("Processed XML!");
 }
 function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
     let container = document.createElement("div");
     container.class = "game";
     let previewimage = document.createElement("img");
     previewimage.src = FOLDER + "/" + PREVIEW;
+    previewimage.addEventListener("click", () => {
+        location.href = FOLDER + "/index.html";
+    });
     container.appendChild(previewimage);
     let title = document.createElement("h1");
     title.innerText = NAME;
