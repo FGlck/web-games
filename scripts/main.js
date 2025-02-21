@@ -13,8 +13,9 @@ function processInput(request) {
 function processXML(xml) {
     console.log("Processing XML...");
     let games = xml.getElementsByTagName("GAME");
-    games.forEach(game => {
+    games.childNodes.forEach(game => {
         spawnContainer("HI", "jj", "J", "uehdi", "123.png");
+        console.log(game);
     });
 }
 function spawnContainer(NAME, FOLDER, AUTHOR, PAGE, PREVIEW) {
